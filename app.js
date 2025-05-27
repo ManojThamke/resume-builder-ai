@@ -9,6 +9,7 @@ dotenv.config();
 
 // Import Routes 
 const authRoutes = require('./routes/auth.router');
+const templateRoutes = require('./routes/template.routes');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -34,6 +35,7 @@ app.use(express.static('public'));
 
 // Use Routes
 app.use('/', authRoutes);
+app.use('/', templateRoutes);
 
 // Routes
 app.get('/', (req,res) => {

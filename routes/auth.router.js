@@ -3,7 +3,7 @@ const router = express.Router();
 const authCtrl = require('../controllers/auth.controller');
 
 router.get('/signup', authCtrl.renderSignup);
-router.post('/signuo', authCtrl.signupUser);
+router.post('/signup', authCtrl.signupUser);
 
 router.get('/login', authCtrl.renderLogin);
 router.post('/login', authCtrl.loginUser);

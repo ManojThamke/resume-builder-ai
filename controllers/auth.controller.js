@@ -6,7 +6,7 @@ exports.renderSignup = (req, res) => {
 };
 
 exports.renderLogin = (req, res) => {
-    res.render('page/login');
+    res.render('pages/login');
 };
 
 exports.signupUser = async (req, res) =>{

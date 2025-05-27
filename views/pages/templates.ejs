@@ -1,0 +1,11 @@
+<h2>Choose Resume Template</h2>
+<div style="display: flex; gap: 20px;">
+    <% templates.forEach(t => { %>
+        <div style="border: 1px solid #ccc; padding: 10px;">
+            <img src="<%= t.thumbnailUrl %>" alt="<%= t.name %>" style="width: 150px;">
+            <h4><%= t.name %></h4>
+            <p>Category: <%= t.Category %></p>
+            <a href="/resume/new?template=<%= t._id %>">Use Template</a>
+        </div>
+    <%})%>
+</div>
